@@ -3,10 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RS - Todo App</title>
   </head>
   <body>
-    <h2>Mini Project with console</h2>
-    <script src="./script.js"></script>
+    <main class="todo_wrapper">
+      <h1 class="heading">RS Todo</h1>
+      <div class="input__wrapper">
+        <input
+          id="task_input"
+          type="text"
+          placeholder="Add task.."
+          autofocus
+          autocomplete="off"
+        />
+        <button id="add_btn">Add</button>
+      </div>
+
+      <ul class="task_list">
+        <!-- Task will come from js -->
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
