@@ -61,10 +61,16 @@ body {
 .task_list {
   margin-top: 2.8rem;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  /* border: 0.1rem solid #ffb703; */
+  /* padding: 1rem 1.5rem; */
+  border-radius: 0.6rem;
+  height: 60rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .task {
+    margin-bottom: 2rem;
     padding: 0 2rem;
     height: 5rem;
     font-size: 1.6rem;
@@ -85,12 +91,28 @@ body {
         border-radius: 0.5rem;
         text-align: center;
         line-height: 3.5rem;
+        transition: all 0.2s linear;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
       .edit_icon {
         background: #023047;
+        border: 0.15rem solid transparent;
+        &:hover {
+          background-color: transparent;
+          border-color: #023047;
+          color: #023047;
+        }
       }
       .delete_icon {
-        background: #fb8500;
+        background: crimson;
+        border: 0.1rem solid transparent;
+        &:hover {
+          background-color: transparent;
+          border-color: crimson;
+          color: crimson;
+        }
       }
     }
   }
